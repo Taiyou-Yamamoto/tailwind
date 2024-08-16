@@ -4,16 +4,220 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./output.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
     </head>
     <body class="font-Poppins bg-body text-white">
+        <!-- ナビゲーションバー -->
         <header class="py-6">
-            <div>Taiyo.com</div>
-            <nav>
-                <a href="#home">ホーム</a>
-                <a href="#portfolio">ポートフォリオ</a>
-                <a href="#cliants">お客様</a>
-                <a href="#contact">お問い合わせ</a>
-            </nav>
+            <div
+                class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full"
+            >
+                <div class="text-lg font-bold">Taiyo.com</div>
+                <nav class="space-x-12 hidden md:flex items-center">
+                    <a
+                        href="#home"
+                        class="hover:text-selected-text transition-all duration-300"
+                        >ホーム</a
+                    >
+                    <a
+                        href="#portfolio"
+                        class="hover:text-selected-text transition-all duration-300"
+                        >ポートフォリオ</a
+                    >
+                    <a
+                        href="#skills"
+                        class="hover:text-selected-text transition-all duration-300"
+                        >スキル一覧</a
+                    >
+                    <a href="#contact"
+                        ><button
+                            class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300"
+                        >
+                            お問い合わせ
+                        </button></a
+                    >
+                </nav>
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </header>
+
+        <!-- ヒーローセクション -->
+        <div
+            id="home"
+            class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+        >
+            <div class="flex flex-wrap md:flex-nowrap">
+                <div
+                    class="md:my-36 lg:ml-20 justify-center max-w-xl flex flex-wrap"
+                >
+                    <h1
+                        class="font-bold text-5xl text-center md:text-left lg:text-7xl md:text-6xl"
+                    >
+                        TailWindCSSで<br />美しいサイトを<br />作ります
+                    </h1>
+                    <button
+                        class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300 mt-10"
+                    >
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>もっと見る</span>
+                    </button>
+                </div>
+                <img
+                    src="./images/human.jpg"
+                    alt="image"
+                    class="md:absolute lg:top-2 lg:right-52 md:w-3/5 w-10/12 md:mt-0 right-6 mx-auto -z-10 lg:w-3/6"
+                />
+            </div>
+        </div>
+
+        <!-- ポートフォリオセクション-->
+        <div
+            id="portfolio"
+            class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+        >
+            <section class="w-full">
+                <h2 class="secondary-title">私のポートフォリオ</h2>
+                <p class="section-paragraph">
+                    私が作ってきたwebアプリケーションがこちら
+                </p>
+                <div
+                    class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
+                >
+                    <img
+                        src="./images/portfolio1.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img
+                        src="./images/portfolio2.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img
+                        src="./images/portfolio3.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img
+                        src="./images/portfolio4.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img
+                        src="./images/portfolio5.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img
+                        src="./images/portfolio6.jpg"
+                        alt=""
+                        class="w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer"
+                    />
+                    <img src="" alt="" />
+                </div>
+            </section>
+        </div>
+
+        <!-- スキルスタック -->
+        <div
+            id="portfolio"
+            class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+        >
+            <section class="w-full">
+                <h2 class="secondary-title">スキルスタック</h2>
+                <p class="section-paragraph">
+                    私は以下のプログラミング言語を10年以上取り扱ってきました
+                </p>
+                <div class="my-16">
+                    <div
+                        class="w-full border border-purple-600 p-16 lg:px-32 lg:py-16 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer"
+                    >
+                        <!-- 言語のロゴ -->
+                        <div class="mb-6 lg:mb-0 self-center">
+                            <i
+                                class="fa-brands fa-js text-9xl text-yellow-300"
+                            ></i>
+                        </div>
+
+                        <!-- スキルの説明 -->
+                        <div
+                            class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+                        >
+                            <h3 class="text-3xl font-semibold">Javascript</h3>
+                            <div
+                                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start my-3"
+                            >
+                                <div class="badge">Webサイト制作</div>
+                                <div class="badge">フロントエンド開発</div>
+                            </div>
+                            <p class="text-secondary">
+                                普段はReactを使って開発現場で働いています
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-16">
+                    <div
+                        class="w-full border border-purple-600 p-16 lg:px-32 lg:py-16 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer"
+                    >
+                        <!-- 言語のロゴ -->
+                        <div class="mb-6 lg:mb-0 self-center">
+                            <i
+                                class="fa-brands fa-js text-9xl text-yellow-300"
+                            ></i>
+                        </div>
+
+                        <!-- スキルの説明 -->
+                        <div
+                            class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+                        >
+                            <h3 class="text-3xl font-semibold">Javascript</h3>
+                            <div
+                                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start my-3"
+                            >
+                                <div class="badge">Webサイト制作</div>
+                                <div class="badge">フロントエンド開発</div>
+                            </div>
+                            <p class="text-secondary">
+                                普段はReactを使って開発現場で働いています
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-16">
+                    <div
+                        class="w-full border border-purple-600 p-16 lg:px-32 lg:py-16 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer"
+                    >
+                        <!-- 言語のロゴ -->
+                        <div class="mb-6 lg:mb-0 self-center">
+                            <i
+                                class="fa-brands fa-js text-9xl text-yellow-300"
+                            ></i>
+                        </div>
+
+                        <!-- スキルの説明 -->
+                        <div
+                            class="text-center flex flex-wrap justify-center lg:text-left lg:block"
+                        >
+                            <h3 class="text-3xl font-semibold">Javascript</h3>
+                            <div
+                                class="flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start my-3"
+                            >
+                                <div class="badge">Webサイト制作</div>
+                                <div class="badge">フロントエンド開発</div>
+                            </div>
+                            <p class="text-secondary">
+                                普段はReactを使って開発現場で働いています
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

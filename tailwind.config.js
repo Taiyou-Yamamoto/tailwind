@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          100: '#bff8ff',
-          300: '#90cdf4',
-          500: '#4299e1',
-        },
+        body: '#050505',
+        "selected-text": "#A3A3FF",
+        theme: "#5c318c",
+        secondary:"#9191A4",
+        badge:"#3F3F51",
       },
       fontFamily: {
         Bungee: ['Bungee Tint', 'sans-serif'],
